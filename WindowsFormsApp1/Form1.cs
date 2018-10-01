@@ -15,6 +15,22 @@ namespace WindowsFormsApp1
         public Form1()
         {
             InitializeComponent();
+
+            double d1 = 5e6;
+            richTextBox2.AppendText(d1.ToString() + "\n");
+            richTextBox2.AppendText(d1.ToString("N") + "\n");
+            richTextBox2.AppendText(d1.ToString("N3") + "\n");
+            richTextBox2.AppendText(d1.ToString("N0") + "\n");
+            richTextBox2.AppendText(d1.ToString("0") + "\n");
+            richTextBox2.AppendText(d1.ToString("0.0") + "\n");
+            richTextBox2.AppendText(d1.ToString("0.0E0") + "\n");
+            richTextBox2.AppendText(d1.ToString("o.00E00") + "\n");
+        }
+
+
+        private void richTextBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
